@@ -20,3 +20,4 @@ yarn run build
 # run unit tests
 yarn test
 ```
+### PROJET TERMINE !
