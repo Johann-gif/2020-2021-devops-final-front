@@ -87,7 +87,13 @@ workflows:
             - install
       - deploy-netlify: 
           requires: 
-            - prod-build 
+            - prod-build
+          filters:
+            branches:
+              only: main
       - docker-build-push:
           requires: 
             - install
+          filters:
+            branches:
+              only: main
